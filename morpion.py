@@ -42,8 +42,7 @@ else :
     print("Egalité !")
         
         
-<<<<<<< HEAD
+
 print("Merci d'avoir joué !")
-=======
-print("Merci d'avoir joué !")
->>>>>>> 9c7a1e08199da869c631fcb6f5664b3a26ffa62e
+
+
