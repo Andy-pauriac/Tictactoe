@@ -1,6 +1,4 @@
-# Mon jeu Tic Tac Toe - version débutant Python
-# Plateau = liste de 9 cases (0 à 8)
-
+# ========== FONCTIONS COMMUNES ==========
 def afficher_plateau(board):
     print("\n--- PLATEAU ---")
     print(f"{board[0]} | {board[1]} | {board[2]}")
@@ -38,14 +36,14 @@ def cases_libres(board):
 # ========== FONCTION ORDINATEUR (comme demandé) ==========
 def ordinateur(board, signe):
     # signe de l'ordi et du joueur
-    ordi_signe = signe
-    joueur_signe = "O" if signe == "X" else "X"
+    ordi_signe = signe    #défini le signe que l'ordinateur doit jouer 
+    joueur_signe = "O" if signe == "X" else "X" #défini le signe que le joueur humain doit jouer
     
-    libres = cases_libres(board)
+    libres = cases_libres(board) #liste des cases libres sur le plateau
     
     # 1. Est-ce que je peux gagner ?
     for case in libres:
-        board_test = board.copy()
+        board_test = board.copy()   
         board_test[case] = ordi_signe
         if verifier_gagnant(board_test, ordi_signe):
             return case
@@ -54,15 +52,15 @@ def ordinateur(board, signe):
     for case in libres:
         board_test = board.copy()
         board_test[case] = joueur_signe
-        if verifier_gagnant(board_test, joueur_signe):
+        if verifier_gagnant(board_test, joueur_signe):  #vérifie si le coup du joueur peut faire gagner l'ordinateur
             return case
     
     # 3. Je joue au centre si possible
-    if 4 in libres:
+    if 4 in libres:    #permet de vérifier si la case centrale est libre
         return 4
     
     # 4. Sinon coins
-    coins = [0,2,6,8]
+    coins = [0,2,6,8]   #listes des bonnes cases (coins)
     for coin in coins:
         if coin in libres:
             return coin
