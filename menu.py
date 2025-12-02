@@ -3,7 +3,7 @@ def main_menu(play_pvp_callback):
         print("\n=== TIC-TAC-TOE MENU ===")
         print("1. Play vs Player")
         print("2. Play vs Computer")
-        print("3. Rules")
+        # print("3. Rules")
         print("4. Quit")
 
         choice = input("Choose an option (1-4): ")
@@ -26,10 +26,10 @@ def main_menu(play_pvp_callback):
             print("Invalid input. Try again.")
 
 
-def show_rules():
-    print("\n--- RULES ---")
-    print("1. The game is played on a 3x3 grid.")
-    print("2. Player 1 is X, Player 2 or AI is O.")
-    print("3. First to get 3 in a row wins!")
-    print("4. If the grid is full = draw")
-    input("\nPress ENTER to return...")
+# def show_rules():
+#     print("\n--- RULES ---")
+#     print("1. The game is played on a 3x3 grid.")
+#     print("2. Player 1 is X, Player 2 or AI is O.")
+#     print("3. First to get 3 in a row wins!")
+#     print("4. If the grid is full = draw")
+#     input("\nPress ENTER to return...")

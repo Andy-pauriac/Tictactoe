@@ -1,6 +1,6 @@
 from helpers import draw_board , check_turn , check_for_win
 import os
-from test_menu_bis import main_menu
+from menu import main_menu
 
 def play_pvp():
 
