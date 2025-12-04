@@ -1,29 +1,29 @@
 def main_menu(play_pvp_callback):
     while True:
-        print("\n=== TIC-TAC-TOE MENU ===")
-        print("1. Play vs Player")
-        print("2. Play vs Computer")
+        print("\n=== MENU ===")
+        print("1. Jouer contre un autre joueur")
+        print("2. Jouer contre l'ordinateur")
         # print("3. Rules")
-        print("4. Quit")
+        print("3. Quitter")
 
-        choice = input("Choose an option (1-4): ")
+        choice = input("choisis une option (1-3): ")
 
         if choice == "1":
             play_pvp_callback()    # call the game
 
         elif choice == "2":
-            print("AI mode not implemented yet.")
-            input("Press ENTER to return...")
+            print("MODE NON INPLANTÉ")
+            input("ENTRER pour continuer")
+
+        # elif choice == "3":
+        #     show_rules()
 
         elif choice == "3":
-            show_rules()
-
-        elif choice == "4":
-            print("Goodbye!")
+            print("AU REVOIR")
             break
 
         else:
-            print("Invalid input. Try again.")
+            print("Entré invalide , veuillez réessayer .")
 
 
 # def show_rules():
