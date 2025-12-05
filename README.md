@@ -9,8 +9,8 @@ Le projet sur terminal propose 2 mode de jeux :
  - un mode de jeu avec un joueur contre l'ordinateur , avec le fait que l'ordinateur joue de façon automatique contre le joueur A avec un niveau de difficulté de niveau 1 
  - Vous pouvez aussi quitter le programme en mettant le chiffre 3 lors de la selection des menus 
 
-<p align="center">
-Dans les prochaines Features , un mode de jeu via interface graphique sera proposé via le module pygames afin d'avoir un mode de jeux plus visuel et plus intéractif que la version via le terminal </p>
+
+Dans les prochaines Features , un mode de jeu via interface graphique sera proposé via le module pygames afin d'avoir un mode de jeux plus visuel et plus intéractif que la version via le terminal
 
 
 <p align="center">
