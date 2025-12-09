@@ -1,4 +1,4 @@
-from helpers import draw_board , check_turn , check_for_win
+from helpers import draw_board , check_turn , check_for_win #permet d'appeller les fonctions contenu dans le fichier helpers.py
 import os #Permet d'interagir avec le système exploitation (exemple : effacer le contenu a l'écran )
 import random #Utiliser pour que l'ordinateur choissent une case au hasard 
 
@@ -21,11 +21,11 @@ def play_pvp():
         prev_turn = turn 
 
         print("Joueur " + str((turn %2)+1) + " choisit une case (ou 'q' pour quitter) :")
-        choice = input() #demande au joueur (1 ou 2) d'entrer une case choisit
+        choice = input() 
 
         if choice == 'q':
             playing = False
-            break #permet d'arreter le jeu
+            break 
 
         if choice.isdigit() and int(choice) in spots: #verifie si l'entrée est un chiffre et que ce chiffre est bien compris dans la liste spots
             if spots[int(choice)] not in ["X","O"]: #vérifie si la case n'est pas déja occupé par un X ou un O 
@@ -44,7 +44,7 @@ def play_pvp():
         if check_turn(turn) == "X": print("Félicitations ! Joueur 1 a gagné !") #si trois X sont alignés , le joueur 1 gagne
         else: print("Félicitations ! Joueur 2 a gagné !") #si trois O sont alignés , le joueur 2 gagne
     else:
-        print("Égalité !") # au bout du 9eme tour , si aucun des joueurs n'as aligné 3 symboles , c'est égalité
+        print("Égalité !") 
 
     input("\nPress ENTER pour revenir au menu...")
 
